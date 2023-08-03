@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+      color: black;font-weight: bold; font-size: 15px; border: black; font-family: calibri;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+    </style>
+
+  <title>Get QualAnalytics from students</title>
+</head>
+
+<body>
+ 
+  <div style="width:800px; margin:0 auto;">
+    <h2 style="color: black;font-weight: bold;  border: black; font-family: calibri;background-color: wheat;">
+      <label name="" th:text="'Inven!RA - QualAnalytics: '+${name}" /></h2>
+
+    
+
+    <form action="/home" method="post">
+      
+      <table class="table table-striped border-1">
+        <thead>
+					<tr>
+            <th th:text="${numero}"/>
+						<th th:text="${nome}"/>
+						<th th:text="${url}"/>
+            <th th:text="${q1}"/>
+            <th th:text="${q2}"/>
+						<th th:text="${q3}"/>
+            <th th:text="${q4}"/>
+            <th th:text="${q5}"/>
+						<th th:text="${q6}"/>
+            <th th:text="${q7}"/>
+            <th th:text="${q8}"/>
+						<th th:text="${q9}"/>
+            <th th:text="${q10}"/>
+           
+					</tr>
+				</thead>
+        <tbody>
+          <tr th:each="qualAnalytica: ${campos}" style="border: black;">
+						<td th:text="${qualAnalytica.idcruduser}" style="color: black;font-weight: bold; font-size: 15px; border: black; font-family: calibri;">
+                
+            <td th:text="${qualAnalytica.nome}" style="color: black;font-weight: bold; font-size: 15px; border: black; font-family: calibri;">
+              <td th:text="${qualAnalytica.urlstatus} ? 'Sim': 'Não'" th:style="${u1}">
+              <td th:text="${qualAnalytica.questao1status} ? 'Sim': 'Não'" th:style="${s1}">
+              <td th:text="${qualAnalytica.questao2status} ? 'Sim': 'Não'" th:style="${s2}">
+              <td th:text="${qualAnalytica.questao3status} ? 'Sim': 'Não'" th:style="${s3}">
+              <td th:text="${qualAnalytica.questao4status} ? 'Sim': 'Não'" th:style="${s4}">
+              <td th:text="${qualAnalytica.questao5status} ? 'Sim': 'Não'" th:style="${s5}">
+              <td th:text="${qualAnalytica.questao6status} ? 'Sim': 'Não'" th:style="${s6}">
+              <td th:text="${qualAnalytica.questao7status} ? 'Sim': 'Não'" th:style="${s7}">
+              <td th:text="${qualAnalytica.questao8status} ? 'Sim': 'Não'" th:style="${s8}">
+              <td th:text="${qualAnalytica.questao9status} ? 'Sim': 'Não'" th:style="${s9}">
+              <td th:text="${qualAnalytica.questao10status} ? 'Sim': 'Não'" th:style="${s10}">
+					</tr>
+        </tbody>
+    </table>
+      
+     
+      
+    </form>
+  </div>
+  
+  
+</body>
+
+</html>

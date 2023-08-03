@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+
+  <title>Configure activity</title>
+</head>
+
+<body>
+  <div style="width:800px; margin:0 auto;">
+    <h2 style="background-color: wheat;
+        color: black;"><label name="" th:text="'Inven!RA - Qual_Analytics_List: '+${name}" /></h2>
+  </div>
+  <hr class="rounded">
+  <hr class="rounded">
+  <div style="width:800px; margin:0 auto;">
+
+    <form action="/save_config_url" method="post">
+      <table>
+        
+        <tbody>
+      <tr th:if="${analytics.empty}">
+                <td colspan="2"> No filds </td>
+            </tr>
+            <tr th:each="Campo : ${analytics}">
+                <td><label th:text="${Campo.label} " style="color: teal;font-weight: bold; font-size: 22px;"></label>
+                <input th:name="${Campo.name}" th:type="${Campo.type}" style="color: teal;font-weight: bold; font-size: 22px;"/></td>
+            </tr>
+        </tbody>
+    </table>
+      
+     
+      <input type="submit" value="Save">
+    </form>
+  </div>
+  
+  
+</body>
+
+</html>

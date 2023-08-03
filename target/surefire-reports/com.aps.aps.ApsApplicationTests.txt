@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.aps.aps.ApsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.32 s - in com.aps.aps.ApsApplicationTests

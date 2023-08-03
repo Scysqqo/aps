@@ -1,0 +1,84 @@
+{"name":"PROTOCOLO DE MANCHESTER",
+ "config_url":"/configActivity.html",
+ "json_params_url":[
+        {
+            "number":0.0,
+            "label":"Link do PDF para leitura",
+            "name":"urlpdf",
+            "type":"text"
+        },
+        {
+            "number":0.1,
+            "label":"Clique no botão 'submit' para concluir a leitura",
+            "name":"urlpdfstatus",
+            "type":"submit"
+        },
+
+        {
+            "number":1,
+            "label":"Insira a Questão nrº 1",
+            "name":"questao1",
+            "type":"text"
+        },
+
+        {
+            "number":1.1,
+            "label":"Resposta da Questão nrº 1 (S/N)",
+            "name":"questao1status",
+            "type":"text"
+        },
+        {
+            "number":2,
+            "label":"Insira a Questão nrº 2",
+            "name":"questao2",
+            "type":"text"
+        },
+
+        {
+            "number":2.2,
+            "label":"Resposta da Questão nrº 2 (S/N)",
+            "name":"questao2status",
+            "type":"text"
+        },
+        {
+            "number":3,
+            "label":"Insira a Questão nrº 3",
+            "name":"questao3",
+            "type":"text"
+        },
+
+        {
+            "number":3.3,
+            "label":"Resposta da Questão nrº 3 (S/N)",
+            "name":"questao3status",
+            "type":"text"
+        }
+ ],
+ "user_url":"/user_url",
+ "analytic_url":"/analytic_url",
+ "qualAnalytics":[
+   
+    
+    {
+        "name":"urlpdf",
+        "type":"text"
+    },
+    
+    {
+        "name":"questao1",
+        "type":"text"
+    },
+    {
+        "name":"questao2",
+        "type":"textx"
+    },
+
+    {
+        "name":"questao3",
+        "type":"text"
+    }
+                   
+ ]
+                    
+ 
+}

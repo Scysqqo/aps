@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style> 
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: 	#008B8B;
+  border: none;
+  color: white;
+  padding: 18px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 32px;
+        }
+
+        header h1 {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+        </style> 
+
+<title>Protocolo de Manchester</title>
+</head>
+<body>
+  
+  <th:>
+    <div style="width:800px; margin:0 auto;">
+        <h1 style="background-color: #3CBC8D;
+        color: white;">ACTIVIDADE DE APRENDIZAGEM DO PROTOCOLO DE MANCHESTER</h1>
+        <h2>Prioridade de atendimento hospitalar</h2>
+        <h2>Francisco Antonio - utad78000</h2>
+        <form action="/login" method="POST" >
+          
+          <input type="text" name="valor" placeholder="Nro de estudante" style="width: 30%;padding: 8px 20px;margin: 8px 0;box-sizing: border-box;
+          border: 2px solid DarkBlue;border-radius: 4px;">
+          <input type="hidden" value=1 name="idu">
+          <input type="submit" value="Login" style=" background-color: DarkBlue;border: none;color: white;padding: 10px 22px;text-align: center;text-decoration: none;
+          display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;">
+        </form>
+        <form action="/registry_url" method="POST" >
+          <input type="submit" value="Registry File">
+        </form>
+    <form action="/config_url" method="POST" >
+        <input type="submit" value="Config_url">
+      </form>
+
+      <form action="/json_params_url" method="POST">
+        <input type="submit" value="json_params_url">
+      </form>
+
+      <form action="/user_url" method="POST">
+        <input type="submit" value="User_url">
+      </form>
+
+      <form action="/analytics_url" method="POST">
+        <input type="submit" value="Analytics_url">
+      </form>
+
+      <form action="/analytics_url" method="POST">
+        <input type="submit" value="Analytics_list_url"> 
+      </form>
+    </div>
+
+</body>
+</html>
