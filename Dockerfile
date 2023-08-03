@@ -10,4 +10,4 @@ WORKDIR /app
 EXPOSE 8080
 
 # Starting the application
-CMD ["java", "-jar", "aps-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/target/aps-0.0.1-SNAPSHOT.jar"]
