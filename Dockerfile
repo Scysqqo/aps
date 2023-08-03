@@ -1,13 +1,11 @@
 
 # Fetching latest version of Java
+FROM maven:3-jdk-11 as builder
 FROM openjdk:17
  
-# Setting up work directory
-WORKDIR /app
-
-
+FROM openjdk:11-slim as runtime
 # Exposing port 8080
 EXPOSE 8080
 
 # Starting the application
-CMD ["java", "-jar", "/aps/target/aps-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/target/aps-0.0.1-SNAPSHOT.jar"]
